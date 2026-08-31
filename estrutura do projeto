@@ -1,3 +1,5 @@
+o "__init__.py" nao tem nada. isso está correto, mas é bom criar ele
+
 framework/
 │
 ├── configs/
