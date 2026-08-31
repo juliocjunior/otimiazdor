@@ -1,0 +1,66 @@
+# configs/bollinger_stoch_eurusd.yaml
+estudo:
+  nome_estrategia: "bollinger_stoch"
+  sufixo_estudo: "reversao_eurusd_m30"
+
+dados:
+  arquivo_csv: "eurusd_custom_m30.csv"
+  data_inicio: "2020-01-01"
+  data_fim: "2025-01-01"
+
+parametros_estrategia:
+  min_trades: 100 # <--- ADICIONE ISSO AQUI
+  max_backtests: 200000
+
+  # Progressão Exponencial para os Períodos
+  bb_periodo:
+    [12, 18, 25, 33, 42, 53, 64, 77, 91, 106, 122, 139]
+
+    # Desvio: 20 = 2.0 (Inteiros de 4 a 35)
+  bb_desvio: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
+
+  st_periodo: [3, 7, 12, 18, 25, 33, 42]
+
+  # Espaçamento (Inteiros)
+  st_espacamento: [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]
+  adx_periodo: [7, 12, 18, 25, 33, 42, 53, 64, 77, 91]
+  adx_linha:
+    [
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      47,
+      49,
+      51,
+      53,
+      55,
+      57,
+      59,
+      61,
+      63,
+      65,
+      67,
+      69,
+      71,
+      73,
+      75,
+      77,
+      79,
+      81,
+    ]
