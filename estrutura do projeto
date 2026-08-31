@@ -1,0 +1,23 @@
+framework/
+│
+├── configs/
+│   └── bollinger_stoch_eurusd.yaml
+│
+├── core/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   └── data_utils.py
+│
+├── data/
+│   └── eurusd_custom_m30.csv
+│
+├── strategies/
+│   ├── ea_bollinger_stoch.py
+│   └── ea_bollinger.py
+│
+├── venv/
+│
+├── app_dashboard_quant.py
+├── exe.bat
+├── quant_dashboard.db
+└── run_otimizador.py
