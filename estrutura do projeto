@@ -1,5 +1,5 @@
 ---> o "__init__.py" nao tem nada. isso está correto, mas é bom criar ele
----> o exe.bat serve para executar o run_otimizador de forma mais rapida
+---> o exe.bat serve para executar o run_otimizador de forma mais rapida, mas tem que adap
 
 framework/
 │
